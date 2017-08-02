@@ -1,0 +1,8 @@
+--init.lua
+
+file.open("init.lua","w")
+file.writeline()
+file.writeline([[print("Creado por 457U")]])
+file.writeline()
+file.writeline()
+file.writeline([[dofile("webServer.lua")]])
