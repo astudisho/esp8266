@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053174</millis>
+  <sequence>4</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Load saved settings: Firmware:NodeMCU</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053225</millis>
+  <sequence>5</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Snippets: loading...</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053227</millis>
+  <sequence>6</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Snippets load: Success.</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053270</millis>
+  <sequence>7</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Set new color theme: Success.</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053273</millis>
+  <sequence>8</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Load saved settings: DONE.</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053275</millis>
+  <sequence>9</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Snippets: loading...</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053276</millis>
+  <sequence>10</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Snippets load: Success.</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053912</millis>
+  <sequence>11</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Scan system...</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053922</millis>
+  <sequence>12</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>found last saved serial port /dev/ttyUSB0</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:13</date>
+  <millis>1501667053924</millis>
+  <sequence>13</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Scan done.</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:16</date>
+  <millis>1501667056578</millis>
+  <sequence>14</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>FileTab cleared: Success.</message>
+</record>
+<record>
+  <date>2017-08-02T04:44:16</date>
+  <millis>1501667056581</millis>
+  <sequence>15</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>File close: Success.</message>
+</record>
+</log>
