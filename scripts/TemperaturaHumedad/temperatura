@@ -1,0 +1,69 @@
+pin = 5
+
+function temperatura()
+    status, temp, humi, temp_dec, humi_dec = dht.read(pin)
+    if status == dht.OK then
+        -- Integer firmware using this example
+        print(string.format("DHT Temperature:%d.%03d;Humidity:%d.%03d\r\n",
+              math.floor(temp),
+              temp_dec,
+              math.floor(humi),
+              humi_dec
+        ))
+    
+        -- Float firmware using this example
+        print("DHT Temperature:"..temp..";".."Humidity:"..humi)
+    
+    elseif status == dht.ERROR_CHECKSUM then
+        print( "DHT Checksum error." )
+    elseif status == dht.ERROR_TIMEOUT then
+        print( "DHT timed out." )
+    end
+end
+
+function getTemperaturaHumedad()
+    status, temp, humi, temp_dec, humi_dec = dht.read(pin)
+    if status == dht.OK then
+
+        return temp, humi, status;
+    
+    elseif status == dht.ERROR_CHECKSUM then
+        print( "DHT Checksum error." )
+    elseif status == dht.ERROR_TIMEOUT then
+        print( "DHT timed out." )
+    end
+end
+
+
+function uploadTemperatura()
+    header = 'Content-Type: application/json\r\n';    
+    remoteHost = 'http://192.168.0.112:2685';
+    url = '/api/TempHumedad/add';
+    data = {};
+    chipInfo = node.chipid();
+    
+    temp, humi, status = getTemperaturaHumedad();
+
+    if status ~= dht.OK then
+        print("Unsuccesful read from getTemperaturaHumedad()");
+        return
+    end
+    
+    data.Temperatura = temp;
+    data.Humedad = humi;
+    data.ChipInfo = chipInfo;
+
+    http.post( 
+        remoteHost .. url,  --URL
+        header,             --Headers
+        sjson.encode(data), --Data
+        function( code, data)
+        if (code < 0) then
+            print('Post to ' .. remteHost .. url .. 
+                  ' with data' .. sjson.encode( data));
+        else
+            print( code, data );
+        end
+    end);
+end
+    
